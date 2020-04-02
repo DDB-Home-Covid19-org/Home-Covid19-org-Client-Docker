@@ -7,7 +7,7 @@ trigger:
 
 resources:
 - repo: self
-  env: { user: user }
+  
 
 variables:
   # Container registry service connection established during pipeline creation
@@ -16,7 +16,8 @@ variables:
   containerRegistry: 'homecovid19.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/dockerfile'
   tag: '$(Build.BuildId)'
-  
+  env: { "user": "user" }
+
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
