@@ -15,7 +15,7 @@ variables:
   containerRegistry: 'homecovid19.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/dockerfile'
   tag: '$(Build.BuildId)'
-  user: '$(user)'
+  user: '$(USER)'
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
