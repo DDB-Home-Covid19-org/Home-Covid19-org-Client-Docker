@@ -44,5 +44,8 @@ RUN apt-get update \
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog
 
+ENV user DDB-ESENV
+ENV team 253920
+
 ENTRYPOINT ["FAHClient"]
-CMD ["--user=DDB-ES", "--team=253920", "--gpu=false", "--smp=true", "--power=medium"]
+#CMD ["--user=DDB-ES", "--team=253920", "--gpu=false", "--smp=true", "--power=medium"]
