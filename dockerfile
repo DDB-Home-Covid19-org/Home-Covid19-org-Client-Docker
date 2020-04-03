@@ -47,5 +47,7 @@ ENV DEBIAN_FRONTEND=dialog
 ENV user DDB-ESENV
 ENV team 253920
 
+EXPOSE 7396
+
 ENTRYPOINT ["FAHClient"]
-#CMD ["--user=DDB-ES", "--team=253920", "--gpu=false", "--smp=true", "--power=medium"]
+CMD ["--user=DDB-ES", "--team=253920", "--gpu=false", "--smp=true", "--power=medium"]
